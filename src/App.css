@@ -1,0 +1,35 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Split the screen into two equal columns */
+ 
+}
+
+.left-column,
+.right-column {
+  padding: 20px; /* Adjust padding as needed */
+  overflow: auto; /* Use "auto" to add scrollbars if content overflows, or "hidden" to hide the overflow */
+}
+
+.left-column {
+  background-color: #000000; /* Left column background color */
+}
+
+.right-column {
+  background-color: #242424; /* Right column background color */
+}
+
+/* Style the image inside the left grid container */
+.left-column img {
+  width: 100%; /* Set the image width to 100% of its container's width */
+  height: auto; /* Ensure the image maintains its aspect ratio */
+}
+
+
+
