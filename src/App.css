@@ -1,23 +1,19 @@
 body {
   margin: 0;
   padding: 0;
-  /* Set the grid-container to fill the entire viewport */
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Split the screen into two equal columns */
-  width: 100%; /* Set the width of the grid-container to fill the entire viewport */
+  height: 100vh; /* Set a fixed height for the grid container */
 }
 
 .left-column,
 .right-column {
   padding: 20px; /* Adjust padding as needed */
-  overflow: auto; /* Use "auto" to add scrollbars if content overflows, or "hidden" to hide the overflow */
+  overflow: auto; /* Enable scrolling when content overflows */
+  box-sizing: border-box; /* Include padding within the total width and height */
 }
 
 .left-column {
