@@ -1,10 +1,10 @@
 
 
-export const BurgerBuilder = ({ parts }) => {
+export const BurgerBuilder = ({ selectedParts }) => {
     return (
         <div>
             <p>HEllloo</p>
-            {parts.map((part, index) => (
+            {selectedParts.map((part, index) => (
                 <div key={index} className="image-holder">
                     <img src={`/assets/${part}.jpg`} alt={part} />
                 </div>
