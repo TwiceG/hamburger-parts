@@ -1,14 +1,17 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  /* Set the grid-container to fill the entire viewport */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Split the screen into two equal columns */
- 
+  width: 100%; /* Set the width of the grid-container to fill the entire viewport */
 }
 
 .left-column,
@@ -30,6 +33,3 @@
   width: 100%; /* Set the image width to 100% of its container's width */
   height: auto; /* Ensure the image maintains its aspect ratio */
 }
-
-
-
