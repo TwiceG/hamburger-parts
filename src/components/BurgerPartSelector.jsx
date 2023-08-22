@@ -1,5 +1,5 @@
 export const BurgerPartSelector = ({ selectedParts, setSelectedParts }) => {
-    
+
     const handleChange = (event, partName) => {
       const newCount = parseInt(event.target.value, 10);
       const updatedParts = selectedParts.map((part) => ({
@@ -18,7 +18,7 @@ export const BurgerPartSelector = ({ selectedParts, setSelectedParts }) => {
               type="number"
               min={0}
               max={2}
-              value={part.count} // Set the value to the count property
+              value={part.count} 
               onChange={(event) => handleChange(event, part.partName)}
             />
             <label htmlFor={index}>{part.partName}</label>
